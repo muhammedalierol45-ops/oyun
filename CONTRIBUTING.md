@@ -1,0 +1,38 @@
+# Katkıda Bulunma
+
+Portfolyo sitesine katkı göndermek için aşağıdaki adımları izleyin.
+
+## Geliştirme ortamı
+
+- Node.js `22.13.0` veya üzeri gerekir.
+- Bağımlılıkları kurmak için `npm ci` çalıştırın.
+- Yerel geliştirme sunucusunu `npm run dev` ile başlatın.
+
+## Değişiklik hazırlama
+
+- Her pull request'i tek bir amaca odaklayın.
+- Arayüz değişikliklerinde mobil ve masaüstü görünümlerini kontrol edin.
+- Kişisel bilgi, özel anahtar, imzalama dosyası veya yayın paketi eklemeyin.
+- Portfolyoda yer alan proje ve yetkinlik bilgilerini doğrulanmamış iddialarla değiştirmeyin.
+- Yeni bağımlılık ekliyorsanız pull request açıklamasında nedenini belirtin.
+
+## Kontroller
+
+Pull request açmadan önce şu komutları çalıştırın:
+
+```bash
+npm run lint
+npm test
+```
+
+`npm test`, uygulamayı derler ve render edilen sayfanın temel içeriğini kontrol eder.
+
+## Commit ve pull request
+
+Commit mesajlarını kısa ve açıklayıcı yazın. Örnekler:
+
+- `docs: katkı rehberi ekle`
+- `fix: mobil menü taşmasını düzelt`
+- `feat: proje kartlarına bağlantı ekle`
+
+Pull request açıklamasında değişikliği, gerekçesini ve yaptığınız kontrolleri belirtin. Görsel değişikliklerde önce/sonra ekran görüntüsü ekleyin.
