@@ -1,0 +1,36 @@
+name: Özellik önerisi
+description: Portfolyo sitesi için yeni bir özellik veya iyileştirme önerin.
+title: "[Öneri]: "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: "Önerinizi değerlendirebilmemiz için hangi ihtiyacı karşıladığını açıklayın."
+  - type: textarea
+    id: need
+    attributes:
+      label: Çözülecek ihtiyaç
+      description: Mevcut deneyimde hangi eksikliği veya sorunu görüyorsunuz?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Önerilen çözüm
+      description: Nasıl çalışmasını istediğinizi anlatın.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Değerlendirdiğiniz alternatifler
+      description: Aklınıza gelen başka çözümler varsa paylaşın.
+    validations:
+      required: false
+  - type: textarea
+    id: visuals
+    attributes:
+      label: Görsel veya ek bağlam
+      description: Taslak, ekran görüntüsü veya ilgili bağlantıları ekleyin.
+    validations:
+      required: false
